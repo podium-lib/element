@@ -1,0 +1,31 @@
+{
+  "name": "@podium/element",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/podium-lib/labs.git"
+  },
+  "peerDependencies": {
+    "lit": "*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/podium-lib/labs/issues"
+  },
+  "homepage": "https://github.com/podium-lib/labs#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit-translate": "^2.0.1"
+  }
+}
