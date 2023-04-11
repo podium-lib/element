@@ -1,25 +1,22 @@
-// @ts-ignore
+import { i18n } from "@lingui/core";
 import { LitElement } from "lit";
-import { registerTranslateConfig, get } from "lit-translate";
 
 export class PodiumElement extends LitElement {
   #translationSupport = false;
 
   /**
    * Singleton initialiser for the translate function. A singleton is used to that SSR is supported since
-   * typical setup hooks such as connectedCallback are not run server side. First call to the t() function
-   * sets up i18next after which the setup version is then used.
+   * typical setup hooks such as connectedCallback are not run server side. First call to the i18n() function
+   * sets up lingui after which the setup version is then used.
    */
-  get t() {
+  get i18n() {
     if (!this.#translationSupport) {
-      registerTranslateConfig({
-        translationCache: this.translations,
-        lang: this.locale || '',
-      });
+      i18n.load(this.locale, this.translations);
+      i18n.activate(this.locale);
       this.#translationSupport = true;
     }
-    console.log('get', get)
-    return get;
+
+    return i18n;
   }
 
   get translations() {
