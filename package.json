@@ -2,11 +2,16 @@
   "name": "@podium/element",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "files": [
+    "src",
+    "types"
+  ],
+  "main": "./src/index.js",
   "type": "module",
-  "exports": "./index.js",
+  "exports": "./src/index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
@@ -27,5 +32,8 @@
   },
   "dependencies": {
     "@lingui/core": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
   }
 }
