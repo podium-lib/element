@@ -6,7 +6,8 @@
   "type": "module",
   "exports": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests yet\" && exit 0",
+    "lint": "echo \"No linting yet\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,10 @@
   },
   "dependencies": {
     "@lingui/core": "^4.0.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^21.0.2"
   }
 }
