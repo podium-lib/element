@@ -2,10 +2,16 @@
   "name": "@podium/element",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "files": [
+    "src",
+    "types"
+  ],
+  "main": "./src/index.js",
   "type": "module",
-  "exports": "./index.js",
+  "exports": "./src/index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
+    "prepublish": "tsc",
     "test": "echo \"No tests yet\" && exit 0",
     "lint": "echo \"No linting yet\" && exit 0"
   },
@@ -30,6 +36,7 @@
     "@lingui/core": "^4.0.0"
   },
   "devDependencies": {
+    "typescript": "^5.0.4",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "semantic-release": "^21.0.2"
