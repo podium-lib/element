@@ -22,11 +22,11 @@ export class PodiumElement extends LitElement {
   get translations() {
     return this.getAttribute("translations")
       ? JSON.parse(this.getAttribute("translations") || "{}")
-      : null;
+      : {};
   }
 
   get locale() {
-    return this.getAttribute("locale");
+    return this.getAttribute("locale") || "en";
   }
 
   get initialState() {
