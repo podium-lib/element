@@ -20,9 +20,7 @@ export class PodiumElement extends LitElement {
   }
 
   get translations() {
-    return this.getAttribute("translations")
-      ? JSON.parse(this.getAttribute("translations") || "{}")
-      : {};
+    return JSON.parse(this.getAttribute("translations") || "{}");
   }
 
   get locale() {
