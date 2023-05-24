@@ -39,6 +39,9 @@ jobs:
       - name: npm install
         run: |
           npm install
+      - name: prepublish
+        run: |
+          npm run prepublish
       - name: npx semantic-release
         run: |
           npx semantic-release
