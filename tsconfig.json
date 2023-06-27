@@ -10,9 +10,8 @@
     "noEmit": false,
     "declaration": true,
     "emitDeclarationOnly": true,
-    "outDir": "types",
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src/index.js"]
+  "include": ["./index.js"]
 }
