@@ -1,18 +1,14 @@
 {
   "name": "@podium/element",
-  "version": "1.0.7",
+  "version": "1.0.8-next.2",
   "description": "",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "files": [
-    "src",
-    "types"
+    "index.js",
+    "index.d.ts"
   ],
   "type": "module",
-  "exports": {
-    ".": {
-      "default": "./src/index.js",
-      "types": "./types/index.d.ts"
-    }
-  },
   "scripts": {
     "prepublish": "tsc",
     "test": "echo \"No tests yet\" && exit 0",
