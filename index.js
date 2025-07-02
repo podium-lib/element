@@ -1,6 +1,9 @@
 import { i18n } from "@lingui/core";
 import { LitElement } from "lit";
 
+// Re-export lit 
+export * from "lit";
+
 export class PodiumElement extends LitElement {
   #translationSupport = false;
 
